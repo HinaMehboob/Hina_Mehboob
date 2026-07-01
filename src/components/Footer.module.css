@@ -1,7 +1,7 @@
 .footer {
   padding: 48px 0;
   border-top: 1px solid var(--border-color);
-  background-color: var(--background-color);
+  background-color: var(--footer-bg);
   color: var(--text-secondary);
 }
 

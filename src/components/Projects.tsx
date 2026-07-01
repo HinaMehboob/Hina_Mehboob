@@ -179,8 +179,8 @@ export default function Projects() {
         <div className={styles.header}>
           <motion.h2
             className={styles.sectionTitle}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
           >
@@ -190,8 +190,8 @@ export default function Projects() {
           {/* Filter Buttons */}
           <motion.div
             className={styles.filters}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, delay: 0.15 }}
           >

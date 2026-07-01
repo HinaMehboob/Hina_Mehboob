@@ -12,8 +12,8 @@ export default function Hero() {
           {/* Badge container */}
           <motion.div
             className={styles.badgeWrapper}
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           >
             <div className={styles.badge}>
@@ -45,8 +45,8 @@ export default function Hero() {
           {/* Headings */}
           <motion.h1
             className={styles.title}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
           >
             Hi, I&apos;m Hina Mehboob
@@ -54,8 +54,8 @@ export default function Hero() {
           
           <motion.h2
             className={styles.subtitle}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
           >
             Full-Stack AI Developer | Software Engineering Undergraduate
@@ -64,8 +64,8 @@ export default function Hero() {
           {/* Description */}
           <motion.p
             className={styles.description}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.45, ease: [0.16, 1, 0.3, 1] }}
           >
             Software Engineering undergraduate at NUST building production-grade
@@ -75,8 +75,8 @@ export default function Hero() {
           {/* Action Buttons */}
           <motion.div
             className={styles.ctaGroup}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
           >
             <a href="#projects" className={styles.btnSecondary}>

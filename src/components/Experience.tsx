@@ -62,8 +62,8 @@ export default function Experience() {
       <div className={styles.container}>
         <motion.h2
           className={styles.sectionTitle}
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
         >
@@ -75,8 +75,8 @@ export default function Experience() {
             <motion.div
               key={job.id}
               className={styles.timelineItem}
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6, delay: idx * 0.2 }}
             >

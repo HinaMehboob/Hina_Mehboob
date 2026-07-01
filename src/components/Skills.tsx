@@ -197,8 +197,8 @@ export default function Skills() {
       <div className={styles.container}>
         <motion.h2
           className={styles.sectionTitle}
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
         >

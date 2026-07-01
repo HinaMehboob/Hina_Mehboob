@@ -9,8 +9,8 @@ export default function About() {
       <div className={styles.container}>
         <motion.h2
           className={styles.sectionTitle}
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
         >
@@ -21,8 +21,8 @@ export default function About() {
           {/* Left Column: Bio */}
           <motion.div
             className={styles.bioColumn}
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.7, delay: 0.1 }}
           >
@@ -40,8 +40,8 @@ export default function About() {
           {/* Right Column: Education Timeline */}
           <motion.div
             className={styles.educationColumn}
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.7, delay: 0.2 }}
           >
