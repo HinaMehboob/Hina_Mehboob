@@ -23,9 +23,9 @@
   --card-shadow-hover: 0 20px 40px -15px rgba(0, 0, 0, 0.7), 0 0 25px rgba(99, 102, 241, 0.12);
   --card-border: rgba(99, 102, 241, 0.1);
   --card-border-hover: rgba(99, 102, 241, 0.3);
-  --header-bg: rgba(25, 28, 40, 0.85);
-  --header-bg-scrolled: rgba(35, 40, 55, 0.95);
-  --footer-bg: #14161f;
+  --header-bg: rgba(2, 2, 5, 0.9);
+  --header-bg-scrolled: rgba(0, 0, 0, 0.95);
+  --footer-bg: #030305;
 
   --tag-frontend-bg: #1E2A4A;
   --tag-frontend-border: #3B5BDB;
@@ -208,9 +208,9 @@ html[data-theme="light"] {
   --card-shadow-hover: 0 12px 32px -8px rgba(99, 102, 241, 0.15), 0 2px 8px rgba(0, 0, 0, 0.08);
   --card-border: rgba(99, 102, 241, 0.1);
   --card-border-hover: rgba(99, 102, 241, 0.25);
-  --header-bg: rgba(232, 236, 245, 0.85);
-  --header-bg-scrolled: rgba(222, 228, 240, 0.95);
-  --footer-bg: #e5e9f2;
+  --header-bg: rgba(200, 205, 220, 0.85);
+  --header-bg-scrolled: rgba(190, 195, 215, 0.95);
+  --footer-bg: #ced5e5;
 
   --tag-frontend-bg: #EFF3FF;
   --tag-frontend-border: #C7D7FE;
