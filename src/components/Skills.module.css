@@ -1,0 +1,142 @@
+.skills {
+  padding: 80px 0;
+  background-color: var(--background-color);
+  border-bottom: 1px solid var(--border-color);
+  overflow: hidden;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.sectionTitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, var(--text-primary) 0%, var(--text-secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 40px;
+}
+
+/* Marquee Layout */
+.marqueeContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding: 20px 0;
+}
+
+/* Fade gradients for the edges */
+.marqueeContainer::before,
+.marqueeContainer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  z-index: 2;
+  pointer-events: none;
+}
+.marqueeContainer::before {
+  left: 0;
+  background: linear-gradient(to right, var(--background-color), transparent);
+}
+.marqueeContainer::after {
+  right: 0;
+  background: linear-gradient(to left, var(--background-color), transparent);
+}
+
+.marqueeRow {
+  display: flex;
+  width: max-content;
+  animation: scroll var(--speed, 40s) linear infinite;
+}
+
+.marqueeContent {
+  display: flex;
+  gap: 24px;
+  padding-right: 24px;
+  flex-shrink: 0;
+}
+
+.marqueeReverse {
+  animation-direction: reverse;
+}
+
+.marqueeRow:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Square Skill Card */
+.skillCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width: 150px;
+  height: 150px;
+  background: var(--card-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--card-border);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--card-shadow);
+  transition: var(--transition-smooth);
+  cursor: default;
+}
+
+.skillCard:hover {
+  border-color: var(--card-border-hover);
+  box-shadow: var(--card-shadow-hover);
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  color: var(--text-primary);
+}
+
+.logoWrapper svg {
+  width: 40px;
+  height: 40px;
+  transition: var(--transition-smooth);
+}
+
+.skillCard:hover .logoWrapper svg {
+  transform: scale(1.1);
+}
+
+.name {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: var(--transition-fast);
+}
+
+.skillCard:hover .name {
+  color: var(--text-primary);
+}
